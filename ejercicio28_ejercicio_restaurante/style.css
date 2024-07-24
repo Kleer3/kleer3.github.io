@@ -1,0 +1,122 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+}
+
+.restaurant-container {
+    width: 80%;
+    margin: 20px auto;
+}
+
+.restaurant-item {
+    display: flex;
+    background-color: #fff;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.restaurant-rank {
+    background-color: #006400;
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 8px 0 0 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.restaurant-image {
+    position: relative;
+    flex: 1;
+}
+
+.restaurant-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.restaurant-price {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.restaurant-details {
+    flex: 3;
+    padding-left: 20px;
+}
+
+.restaurant-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.restaurant-type {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.pay-icon {
+    background-color: #000;
+    color: #fff;
+    padding: 2px 4px;
+    border-radius: 4px;
+    margin-right: 5px;
+}
+
+.restaurant-favorite {
+    font-size: 24px;
+    color: #ccc;
+}
+
+.restaurant-details h2 {
+    margin: 10px 0;
+    color: #444;
+}
+
+.restaurant-details p {
+    margin: 5px 0;
+    color: #666;
+}
+
+.restaurant-discount {
+    color: red;
+    font-weight: bold;
+}
+
+.restaurant-rating {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.rating-value {
+    font-size: 24px;
+    font-weight: bold;
+    color: #444;
+    margin-right: 10px;
+}
+
+.rating-reviews {
+    color: #999;
+}
+
+.restaurant-reviews blockquote {
+    font-style: italic;
+    color: #666;
+    margin: 10px 0;
+    padding-left: 10px;
+    border-left: 4px solid #ccc;
+}

@@ -1,0 +1,30 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #e1f103;
+}
+#peliculas {
+    display: flex;
+    flex-wrap: wrap;
+}
+.pelicula {
+    border: 4px solid #3ce711;
+    margin: 10px;
+    padding: 10px;
+    width: 200px;
+    text-align: center;
+    background-color: rgb(240, 3, 185);
+}
+.titulo {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.plataforma {
+    color: #555;
+    margin-bottom: 10px;
+}
+.imagen img {
+    max-width: 100%;
+    height: auto;
+}
+

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creacion de elementos en MOD</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+</body>
+
+
+</html>
+<script>
+    let encabezado = document.createElement("h1");
+    document.querySelector("body").appendChild(encabezado);
+
+    let textoEncabezado = document.createTextNode("Seccion principal");
+    encabezado.appendChild(textoEncabezado);
+    //Creaccion de un atributo creado el elmento 
+    let atributoEncabezado = document.createAttribute("class");
+    atributoEncabezado.value = "rojo";
+    encabezado.setAttributeNode(atributoEncabezado);
+    //Creaccion del atributo mediante el metodo setAttribute
+    encabezado.setAttribute("id", "encabezado1");
+    setInterval(() => {
+        //Asi se hacia en los 80
+        /*if (atributoEncabezado.value === "verde") {
+            atributoEncabezado.value = "rojo";
+        } else {
+            atributoEncabezado.value = "verde";
+        }*/
+        //Asi se hace en la actualidad
+        atributoEncabezado.value = (atributoEncabezado.value === "verde") ? "rojo" : "verde";
+
+    }, 3000);
+</script>
